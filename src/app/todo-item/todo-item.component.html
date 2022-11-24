@@ -1,0 +1,7 @@
+<li [class.completed]="todo.completed" (click)="onTodoClicked()">
+  <p>{{ todo.text }}</p>
+  <div class="todo-controls" (click)="$event.stopPropagation()">
+    <button (click)="onEditClicked()">edit</button>
+    <button (click)="onDeleteClicked()">delete</button>
+  </div>
+</li>
